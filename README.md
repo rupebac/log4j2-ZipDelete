@@ -11,3 +11,10 @@ Use example:
 				<IfFileName glob=".logs/app*.log" />
 			</ZipDelete>
 		  </DefaultRolloverStrategy>
+
+
+
+You need to include the package in the configuration element:
+
+	<configuration status="INFO" packages="org.apache.logging.log4j.core.appender.rolling.action">
+	</configuration>
